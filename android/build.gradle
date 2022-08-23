@@ -5,7 +5,7 @@ buildscript {
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.5.3'
+    classpath 'com.android.tools.build:gradle:3.5.4'
   }
 }
 
@@ -126,9 +126,8 @@ repositories {
 dependencies {
   //noinspection GradleDynamicVersion
   implementation "com.facebook.react:react-native:+"
+  implementation project(path: ':blur_view_lib')
   // From node_modules
-
-  implementation 'com.github.Dimezis:BlurView:version-2.0.2'
 }
 
 if (isNewArchitectureEnabled()) {
