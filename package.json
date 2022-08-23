@@ -1,6 +1,6 @@
 {
-  "name": "@react-native-community/blur",
-  "version": "4.2.0",
+  "name": "@react-native-community/blur-fix",
+  "version": "4.2.1",
   "description": "React Native Blur component",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -35,16 +35,6 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/react-native-community/react-native-blur",
-  "author": "Alexey Kureev <kureev-mail@ya.ru> (https://github.com/Kureev)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/react-native-community/react-native-blur/issues"
-  },
-  "homepage": "https://github.com/react-native-community/react-native-blur",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@babel/eslint-parser": "^7.18.2",

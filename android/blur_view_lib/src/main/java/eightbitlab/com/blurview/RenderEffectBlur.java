@@ -65,7 +65,7 @@ public class RenderEffectBlur implements BlurAlgorithm {
 
     @Override
     public void render(@NonNull Canvas canvas, @NonNull Bitmap ignored) {
-      if (false)
+      if (canvas.isHardwareAccelerated())
         canvas.drawRenderNode(node);
     }
 }
