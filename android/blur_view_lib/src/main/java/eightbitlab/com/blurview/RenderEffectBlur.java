@@ -55,7 +55,7 @@ public class RenderEffectBlur implements BlurAlgorithm {
     @NonNull
     @Override
     public Bitmap.Config getSupportedBitmapConfig() {
-        return Bitmap.Config.ARGB_8888;
+        return Bitmap.Config.HARDWARE;
     }
 
     @Override
@@ -65,6 +65,7 @@ public class RenderEffectBlur implements BlurAlgorithm {
 
     @Override
     public void render(@NonNull Canvas canvas, @NonNull Bitmap ignored) {
+      if (canvas.isHardwareAccelerated())
         canvas.drawRenderNode(node);
     }
 }
